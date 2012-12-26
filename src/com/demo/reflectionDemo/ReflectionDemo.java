@@ -13,13 +13,14 @@ import org.junit.Test;
 
 
 public class ReflectionDemo {
-	//·´Éä¹¹Ôìº¯Êý
+	//ï¿½ï¿½ï¿½ä¹¹ï¿½ìº¯ï¿½ï¿½
 	@Test
 	public void test() throws Exception{
 		//1.
 		Class clazz = Class.forName("com.demo.reflectionDemo.Person");
 		Constructor c = clazz.getConstructor(null);
 		Person p = (Person)c.newInstance(null);
+		
 		System.out.println(p.name);
 		
 		//2.
@@ -60,7 +61,7 @@ public class ReflectionDemo {
 	}
 	
 	
-	//·´Éä·½·¨
+	//ï¿½ï¿½ï¿½ä·½ï¿½ï¿½
 	@Test
 	public void example() throws Exception{
 		Person p = new Person();
@@ -107,7 +108,7 @@ public class ReflectionDemo {
 		method.invoke(null,(Object)new String[]{"aa","bb"});
 	}
 	
-	//·´Éä×Ö¶Î
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½
 	@Test
 	public void tst() throws Exception{
 		Person p = new Person();
