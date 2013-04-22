@@ -21,4 +21,12 @@ public class ClassA {
 		a.var3 = 30;
 		a.var4 = 40;
 	}
+	
+	public int getVar4(){
+		return var4;
+	}
+	
+	public void setVar4(int var){
+		this.var4 = var;
+	}
 }
